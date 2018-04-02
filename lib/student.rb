@@ -36,6 +36,7 @@ class Student
 
   def self.count_all_students_in_grade_9
     "SELECT stuendts.id FROM students, COUNT(student.id) WHERE grade = '9'"
+  end
 
   def save
     sql = <<-SQL
